@@ -14,7 +14,7 @@ addpath('toolbox_general')
 ltfatstart
 
 
-load('dataw80.mat')
+load('dataw99.mat')
 SNR_motifs_average = zeros(k,1);
 optimal_transport_Uk_average = zeros(k,1);
 optimal_transport_U_average = 0;
@@ -88,7 +88,7 @@ end
 M = length(v_init(:,1));
 
 MaxLambda = MaxLambda_multi_cdl(XXsensors,z_init,u_init,v_init);
-lambda = logspace(log10(MaxLambda)-0.6,log10(MaxLambda)-5,10);
+lambda = logspace(log10(MaxLambda)-0.5,log10(MaxLambda)-5,10);
 %lambda = logspace(1,-4,15);
 pos_z = 1;
 pos_u = 0;

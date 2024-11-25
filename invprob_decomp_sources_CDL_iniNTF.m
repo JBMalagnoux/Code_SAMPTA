@@ -14,7 +14,7 @@ addpath('toolbox_general')
 ltfatstart
 
 rng(42);
-load('dataw80.mat')
+load('dataw99.mat')
 SNR_motifs_average = zeros(k,1);
 optimal_transport_Uk_average = zeros(k,1);
 optimal_transport_U_average = 0;
